@@ -1,0 +1,19 @@
+{
+  "title": "My Header",
+  "icons": [
+    {
+      "type": "user",
+      "tooltip": "User Profile"
+    },
+    {
+      "type": "settings",
+      "tooltip": "Settings"
+    },
+    {
+      "type": "info",
+      "tooltip": "Information"
+    }
+  ]
+}
+
+
