@@ -223,7 +223,13 @@
                 background-position: center;
                 width: 100%;
                 border-radius: 24px;
-              }
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+& div:hover{
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
               & div:nth-of-type(1) {
                 width: 682px;
 height: 458px;
