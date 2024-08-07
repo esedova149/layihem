@@ -1,0 +1,183 @@
+
+#div1-p{
+    margin-bottom: 100px;
+    height: 487px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-position: center;
+    background-image: url(./image/Image1.png) ;
+    & #div1-header-a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 100px;
+        padding-top: 35px;
+        & .logo{
+            color: var(--Black, #18161D);
+            text-align: center;
+            font-family: "Yeseva One";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            & span{
+                color: var(--Green, #6C8947);
+            }
+        }
+        & ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 64px;
+            cursor: pointer;
+            & li a{
+                color: var(--Grey-100, #51575D);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+            }
+        }
+        & .btn1{
+            
+    gap: 10px;
+    & button{
+        cursor: pointer;
+         background-color: transparent;
+         border: 0;   
+         color: var(--Black, #18161D);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+    border-radius: 4px;
+    border: 1px solid var(--Black, #18161D);
+    display: inline-flex;
+    padding: 12px 16px;
+    align-items: flex-start;
+    }
+        }
+    }
+    & #div1-center-a{
+        margin-top: 109px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        
+        & div{
+            color: var(--Black, #18161D);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        }
+        & p{
+            width: 623px;
+            color: var(--Grey-100, #51575D);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+        }
+            }
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 371px;
+height: 585px;
+flex-shrink: 0;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-card h3 {
+    margin-top: 0;
+    color: var(--Black, #18161D);
+font-family: "Yeseva One";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #6C8947;
+    margin-bottom: 32px;
+  }
+  
+  .description {
+    width: 331px;
+    color: var(--Black, #18161D);
+text-align: center;
+
+/* Body 14 */
+font-family: "Plus Jakarta Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 200% */
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    & li {
+        width: 275px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        color: #51575D;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+      } 
+  }
+  
+  .pick-button {
+    border-radius: 8px;
+border: 1px solid #6C8947;
+color: #6C8947;
+text-align: center;
+font-family: "Plus Jakarta Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 200% */
+    padding: 12px 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: auto;
+  }
+  .pick-button:hover{
+    background-color: #6C8947;
+    color: #FFF;
+  }
+  .pricing-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
