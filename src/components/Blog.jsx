@@ -40,7 +40,7 @@ const Blog= () =>{
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. </p>
         </div>
       </div >
-      <div className='div2 hidden'>
+      <div id='div2-b' className='hidden'>
           {updates.map((update, index) => (
             <div className='div3-center' key={index}>
               <div className='div3-center1'></div>
@@ -53,7 +53,7 @@ const Blog= () =>{
             </div>
           ))}
         </div>
-        <div className='div2 hidden'>
+        <div id='div2-b' className='hidden'>
           {updates.map((update, index) => (
             <div className='div3-center' key={index}>
               <div className='div3-center1'></div>
@@ -66,7 +66,7 @@ const Blog= () =>{
             </div>
           ))}
         </div>
-        <div className='div2 hidden'>
+        <div id='div2-b' className='hidden'>
           {updates.map((update, index) => (
             <div className='div3-center' key={index}>
               <div className='div3-center1'></div>
@@ -79,7 +79,7 @@ const Blog= () =>{
             </div>
           ))}
         </div>
-        <div id='div6' className='hidden'>
+        <div id='div3-b' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>

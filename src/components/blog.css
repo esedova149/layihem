@@ -95,7 +95,7 @@
         }
             }
 }
-& .div2{
+#div2-b{
     gap: 27px;
     display: flex;
     align-items: center;
@@ -185,7 +185,7 @@ line-height: 28px; /* 200% */
         }
     }
 }
-#div6{
+#div3-b{
     display: flex;
     align-items: flex-start;
     justify-content: center;
