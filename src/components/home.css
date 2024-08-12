@@ -366,25 +366,26 @@ line-height: normal;
             justify-content: center;
             gap: 24px;
             margin-bottom: 64px;
-            & .div3-center1{
+            & div:nth-of-type(1){
                 width: 395px;
-height: 238px;
-flex-shrink: 0;
-border-radius: 20px;
-                background: url(./image/Image8.png);
-                background-size: cover; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 238px;
+                flex-shrink: 0;
+                border-radius: 20px;
+                                background-size: cover; 
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
-            & .div3-center1:hover{
-                background: url(./image/Image8.png);
+            & div:nth-of-type(1):hover{
                 transform: scale(1.05); 
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 opacity: 0.7;
+        }
+            & .div3-center1{
+                background: url(./image/Image8.png);
             }
             & #div3-center11{
                 background: url(./image/Image9.png);
             }
-            & #div3-center12{
+            & #div3-center111{
                 background: url(./image/Image10.png);
             }
             & .div3-center2{
