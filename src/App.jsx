@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio';
 import Service from './components/Service';
 import PricingPlan from './components/PricingPlan';
 import Blog from './components/Blog';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Service/>
       <PricingPlan/>
       <Blog/>
+      <ContactUs/>
     </div>
   );
 }

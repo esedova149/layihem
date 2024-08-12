@@ -1,8 +1,8 @@
 
-#um-p{
+#um-c{
     width: 1440px;
 }
-#div1-p{
+#div1-c{
     margin-bottom: 100px;
     height: 487px;
     width: 100%;
@@ -96,95 +96,7 @@
         }
             }
 }
-
-.pricing-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 371px;
-height: 585px;
-flex-shrink: 0;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pricing-card h3 {
-    margin-top: 0;
-    color: var(--Black, #18161D);
-font-family: "Yeseva One";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 120% */
-margin-bottom: 10px;
-  }
-  
-  .price {
-    font-size: 24px;
-    color: #6C8947;
-    margin-bottom: 32px;
-  }
-  
-  .description {
-    width: 331px;
-    color: var(--Black, #18161D);
-text-align: center;
-
-/* Body 14 */
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 200% */
-  }
-  
-  .features {
-    list-style: none;
-    padding: 0;
-    & li {
-        width: 275px;
-        margin: 10px 0;
-        display: flex;
-        align-items: center;
-        color: #51575D;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 200% */
-      } 
-  }
-  
-  .pick-button {
-    border-radius: 8px;
-border: 1px solid #6C8947;
-color: #6C8947;
-text-align: center;
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 200% */
-    padding: 12px 32px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: auto;
-  }
-  .pick-button:hover{
-    background-color: #6C8947;
-    color: #FFF;
-  }
-  .pricing-cards-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  #div5-p{
+#div2-c{
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -193,7 +105,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
-margin-bottom: 100px;
+/* margin-bottom: 100px; */
 & .div5-top{
     color: var(--Black, #18161D);
 text-align: center;
@@ -307,7 +219,60 @@ border: 0;
 cursor: pointer;
 }
 }
-#div6{
+#div3-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 61px;
+
+    & >div:nth-of-type(1){
+        width: 607px;
+        height: 336px;
+        flex-shrink: 0;
+        background-image: url(./image/Image33.png);
+    }
+    & >div:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 70px;
+        & .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 33px;
+            & div{
+                width: 30.72px;
+height: 30.72px;
+flex-shrink: 0;
+                background-image: url(./image/Message.svg);
+            }
+            & p{
+                color: var(--Black, #18161D);
+
+/* Heading 20 */
+font-family: "Yeseva One";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+            }
+        }
+        & #contact-2{
+            & div{
+                background-image: url(./image/Location.svg);
+            }
+        }
+        & #contact-3{
+            & div{
+                background-image: url(./image/Calling.svg);
+            }
+        }
+    }
+}
+#div4-c{
     display: flex;
     align-items: flex-start;
     justify-content: center;

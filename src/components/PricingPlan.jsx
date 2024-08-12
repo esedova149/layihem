@@ -110,7 +110,7 @@ const PricingPlan= () =>{
         <PricingCard key={index} {...plan} />
       ))}
     </div>
-    <div id='div5' className='hidden'>
+    <div id='div5-p' className='hidden'>
         <div className='div5-top'>Need a consultation<br />for your home?</div>
         <form className='div5-center' onSubmit={handleSubmit}>
           <div className='div5-center1'>
