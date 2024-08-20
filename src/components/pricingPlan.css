@@ -2,7 +2,7 @@
 #um-p{
     width: 1440px;
 }
-#div1-p{
+#div1-pp{
     margin-bottom: 100px;
     height: 487px;
     width: 100%;
@@ -97,94 +97,93 @@
             }
 }
 
-.pricing-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 371px;
-height: 585px;
-flex-shrink: 0;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pricing-card h3 {
-    margin-top: 0;
-    color: var(--Black, #18161D);
-font-family: "Yeseva One";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 120% */
-margin-bottom: 10px;
-  }
-  
-  .price {
-    font-size: 24px;
-    color: #6C8947;
-    margin-bottom: 32px;
-  }
-  
-  .description {
-    width: 331px;
-    color: var(--Black, #18161D);
-text-align: center;
-
-/* Body 14 */
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 200% */
-  }
-  
-  .features {
-    list-style: none;
-    padding: 0;
-    & li {
-        width: 275px;
-        margin: 10px 0;
+#div2-pp{
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    & .pricing-card {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        color: #51575D;
+        justify-content: flex-start;
+        width: 371px;
+    height: 585px;
+    flex-shrink: 0;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+    &  .pricing-card h3 {
+        margin-top: 0;
+        color: var(--Black, #18161D);
+    font-family: "Yeseva One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    margin-bottom: 10px;
+      }
+      
+    &  .price {
+        font-size: 24px;
+        color: #6C8947;
+        margin-bottom: 32px;
+      }
+      
+     & .description {
+        width: 331px;
+        color: var(--Black, #18161D);
+    text-align: center;
     font-family: "Plus Jakarta Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px; /* 200% */
-      } 
-  }
+      }
+      
+     & .features {
+        list-style: none;
+        padding: 0;
+        & li {
+            width: 275px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            color: #51575D;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 200% */
+          } 
+      }
+      
+     & .pick-button {
+        border-radius: 8px;
+    border: 1px solid #6C8947;
+    color: #6C8947;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 200% */
+        padding: 12px 32px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: auto;
+      }
+     & .pick-button:hover{
+        background-color: #6C8947;
+        color: #FFF;
+      }
+
+}
   
-  .pick-button {
-    border-radius: 8px;
-border: 1px solid #6C8947;
-color: #6C8947;
-text-align: center;
-font-family: "Plus Jakarta Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 200% */
-    padding: 12px 32px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: auto;
-  }
-  .pick-button:hover{
-    background-color: #6C8947;
-    color: #FFF;
-  }
-  .pricing-cards-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  #div5-p{
+#div3-pp{
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -307,7 +306,7 @@ border: 0;
 cursor: pointer;
 }
 }
-#div6{
+#div4-pp{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -457,3 +456,33 @@ flex-shrink: 0;
         }
     }
 }
+#div5-pp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 64px;
+flex-shrink: 0;
+background: #121016;
+color: var(--Grey-50, #A3A4A9);
+font-family: "Plus Jakarta Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 200% */
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+  }
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+button{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }

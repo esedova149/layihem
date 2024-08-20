@@ -116,7 +116,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div id='div5' className='hidden'>
+      <div id='div3-a' className='hidden'>
         <div className='div5-top'>Need a consultation<br />for your home?</div>
         <form className='div5-center' onSubmit={handleSubmit}>
           <div className='div5-center1'>
@@ -156,7 +156,7 @@ const About = () => {
           </div>
         </form>
       </div>
-      <div id='div6' className='hidden'>
+      <div id='div4-a' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>
@@ -201,6 +201,7 @@ const About = () => {
           </div>
         </div>
         </div>
+      <div id='div5-a' className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
     </div>
   );
 };

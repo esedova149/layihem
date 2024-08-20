@@ -4,6 +4,8 @@ import "./home.css";
 import data from './data/home.json';
 
 const Home = () => {
+ 
+
   const menuItems = ["Home", "About Us", "Portfolio", "Service", "Pages"];
   const services = [
     {
@@ -111,7 +113,7 @@ const Home = () => {
           <ul>
             {menuItems.map((item, index) => (
               <li key={index}>
-                <a href="#">{item}</a>
+                <a href="Home">{item}</a>
               </li>
             ))}
           </ul>
@@ -295,6 +297,7 @@ const Home = () => {
           </div>
         </div>
         </div>
+      <div id='div7'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
     </div>
   );
 };

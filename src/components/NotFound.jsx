@@ -1,31 +1,13 @@
-import React, { useState} from 'react';
-import './contactUs.css';
+import React from 'react';
+import './notFound.css';
 
-const ContactUs= () =>{
+const NotFound= () =>{
 
     const menuItems = ["Home", "About Us", "Portfolio", "Service", "Pages"];
      
-    const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      message: ''
-    });
-  
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-    };
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log(formData);
-    };
-
   return (
- <div id='um-c'>
-    <div id='div1-c' className='hidden'>
+ <div id='um-n'>
+    <div id='div1-n' className='hidden'>
         <div id='div1-header-a' className='container'>
           <div className="logo">Inter<span>Q</span></div>
           <ul>
@@ -38,68 +20,12 @@ const ContactUs= () =>{
           <div className='btn1'><button>Contact Us</button></div>
         </div>
         <div id='div1-center-a' className='container'>
-          <div>Contact Us</div>
+          <div><div>404</div><div>Page Not Found</div></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. </p>
+          <div className='btn2'><button>Back to Homepage</button></div>
         </div>
       </div >
-    <div id='div2-c' className='hidden'>
-        <div className='div5-top'>Need a consultation<br />for your home?</div>
-        <form className='div5-center' onSubmit={handleSubmit}>
-          <div className='div5-center1'>
-            <div>
-              <label>Your Name</label>
-              <input 
-                type='text' 
-                name='name'
-                placeholder='Your Full Name'
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label>Your Email</label>
-              <input 
-                type='email' 
-                name='email'
-                placeholder='Your Email Address'
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className='div5-center2'>
-            <label>Your Message</label>
-            <input 
-              type='text' 
-              name='message'
-              placeholder='Write Here'
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
-          <div className='btn5'>
-            <button type='submit'>Send</button>
-          </div>
-        </form>
-      </div>
-    <div id='div3-c' className='hidden'>
-        <div></div>
-        <div>
-            <div className='contact'>
-                <div></div>
-                <p>your.email.inbox@here.com</p>
-            </div>
-            <div className='contact' id='contact-2'>
-                <div></div>
-                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-            </div>
-            <div className='contact' id='contact-3'>
-                <div></div>
-                <p>+62 424 954 824</p>
-            </div>
-        </div>
-      </div>
-    <div id='div4-c' className='hidden'>
+    <div id='div2-n' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>
@@ -143,10 +69,10 @@ const ContactUs= () =>{
             </div>
           </div>
         </div>
-      </div>
-    <div id='div5-c'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
+        </div>
+    <div id='div3-n'>Copyright InterQ. 2021 All Right Reserved</div>
  </div>
   );
 }
 
-export default ContactUs;
+export default NotFound;

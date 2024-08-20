@@ -1,10 +1,9 @@
 
-#um-c{
+#um-n{
     width: 1440px;
 }
-#div1-c{
-    margin-bottom: 100px;
-    height: 487px;
+#div1-n{
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-clip: inherit;
@@ -76,6 +75,8 @@
         gap: 32px;
         
         & div{
+            display: flex;
+            flex-direction: column;
             color: var(--Black, #18161D);
     text-align: center;
     font-family: "Yeseva One";
@@ -94,185 +95,26 @@
     font-weight: 500;
     line-height: 28px; /* 200% */
         }
-            }
-}
-#div2-c{
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-padding: 54px 108px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-/* margin-bottom: 100px; */
-& .div5-top{
-    color: var(--Black, #18161D);
+        & .btn2 button{
+            cursor: pointer;
+             border: 0;   
+             color: #FFF;
 text-align: center;
-font-family: "Yeseva One";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 40px;
-}
-& .div5-center{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;  
-  justify-content: center;
-  gap: 32px;
-}
-& .div5-center1{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 32px;
-& div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 12px;
-}
-& label{
-    color: var(--Black, #18161D);
-
-/* Heading 16 */
-font-family: "Yeseva One";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-& input{
-    width: 372px;
-height: 49px;
-flex-shrink: 0;
-padding: 20px;
-border-radius: 4px;
-border: 1px solid rgba(0, 0, 0, 0.07);
-background: #FFF;
-}
-& input::placeholder{
-    color: var(--Grey-50, #A3A4A9);
-font-family: "Plus Jakarta Sans";
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 200% */
-}
-}
-& .div5-center2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 32px;
-    & label{
-        color: var(--Black, #18161D);
-
-/* Heading 16 */
-font-family: "Yeseva One";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-    }
-    & input{
-        width: 776px;
-height: 135px;
-flex-shrink: 0;
-    padding: 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    background: #FFF;
-    }
-    & input::placeholder{
-        color: var(--Grey-50, #A3A4A9);
-    font-family: "Plus Jakarta Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 200% */
-    }
-}
-& .btn5 button{
-    color: #FFF;
-text-align: center;
-
-/* Body 14 */
 font-family: "Plus Jakarta Sans";
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 28px; /* 200% */
-    display: flex;
-    width: 166px;
-    padding: 14px 0px 10px 0px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-background: var(--Green, #6C8947);
-border: 0;
-cursor: pointer;
-}
-}
-#div3-c{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px;
-    gap: 61px;
-
-    & >div:nth-of-type(1){
-        width: 607px;
-        height: 336px;
-        flex-shrink: 0;
-        background-image: url(./image/Image33.png);
-    }
-    & >div:nth-of-type(2){
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 70px;
-        & .contact{
-            display: flex;
-            align-items: center;
+            padding: 14px 43px 10px 44px;
+            display: inline-flex;          
             justify-content: center;
-            gap: 33px;
-            & div{
-                width: 30.72px;
-height: 30.72px;
-flex-shrink: 0;
-                background-image: url(./image/Message.svg);
+            align-items: center;
+                border-radius: 4px;
+            background: var(--Green, #6C8947);
             }
-            & p{
-                color: var(--Black, #18161D);
-
-/* Heading 20 */
-font-family: "Yeseva One";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 120% */
             }
-        }
-        & #contact-2{
-            & div{
-                background-image: url(./image/Location.svg);
-            }
-        }
-        & #contact-3{
-            & div{
-                background-image: url(./image/Calling.svg);
-            }
-        }
-    }
 }
-#div4-c{
+#div2-n{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -422,7 +264,7 @@ flex-shrink: 0;
         }
     }
 }
-#div5-c{
+#div3-n{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,20 +278,3 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.9s ease-out, transform 0.6s ease-out;
-  }
-  .show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-button{
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-button:hover { 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-

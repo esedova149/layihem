@@ -88,7 +88,7 @@ const PricingPlan= () =>{
 
   return (
   <div id="um-p">
-    <div id='div1-p' className='hidden'>
+    <div id='div1-pp' className='hidden'>
         <div id='div1-header-a' className='container'>
           <div className="logo">Inter<span>Q</span></div>
           <ul>
@@ -105,12 +105,12 @@ const PricingPlan= () =>{
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. </p>
         </div>
       </div >
-      <div className="pricing-cards-container">
+    <div id='div2-pp' className="pricing-cards-container">
       {plans.map((plan, index) => (
         <PricingCard key={index} {...plan} />
       ))}
     </div>
-    <div id='div5-p' className='hidden'>
+    <div id='div3-pp' className='hidden'>
         <div className='div5-top'>Need a consultation<br />for your home?</div>
         <form className='div5-center' onSubmit={handleSubmit}>
           <div className='div5-center1'>
@@ -150,7 +150,7 @@ const PricingPlan= () =>{
           </div>
         </form>
       </div>
-      <div id='div6' className='hidden'>
+    <div id='div4-pp' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>
@@ -195,6 +195,7 @@ const PricingPlan= () =>{
           </div>
         </div>
         </div>
+    <div id='div5-pp'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
   </div>
   );
 }

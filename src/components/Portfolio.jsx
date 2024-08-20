@@ -50,7 +50,7 @@ const Portfolio = () =>{
             </div>
         </div>
       </div>
-      <div id='div6' className='hidden'>
+      <div id='div3-p' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>
@@ -95,6 +95,7 @@ const Portfolio = () =>{
           </div>
         </div>
         </div>
+      <div id='div4-p' className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
       </div>
     );
   }

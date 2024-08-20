@@ -114,7 +114,7 @@ const Service= () =>{
         <div></div>
       </div>
     </div>
-      <div id='div6' className='hidden'>
+      <div id='div4-s' className='hidden'>
         <div className='div6-1'>
           <div className="logo1">Inter<span>Q</span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium</p>
@@ -159,6 +159,7 @@ const Service= () =>{
           </div>
         </div>
         </div>
+      <div id='div5-s' className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
     </div>
   );
 }

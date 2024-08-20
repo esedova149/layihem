@@ -7,6 +7,7 @@ import Service from './components/Service';
 import PricingPlan from './components/PricingPlan';
 import Blog from './components/Blog';
 import ContactUs from './components/ContactUs';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <PricingPlan/>
       <Blog/>
       <ContactUs/>
+      <NotFound/>
     </div>
   );
 }

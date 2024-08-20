@@ -124,7 +124,7 @@ const Blog= () =>{
           </div>
         </div>
         </div>
-
+        <div id='div4-b'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
  </div>
   );
 }

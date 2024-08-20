@@ -335,6 +335,20 @@ flex-shrink: 0;
         }
     }
 }
+#div4-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 64px;
+flex-shrink: 0;
+background: #121016;
+color: var(--Grey-50, #A3A4A9);
+font-family: "Plus Jakarta Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 200% */
+}
 .hidden {
     opacity: 0;
     transform: translateY(50px);

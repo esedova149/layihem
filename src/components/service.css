@@ -474,7 +474,7 @@ line-height: 28px; /* 200% */
         }
     }
 }
-#div6{
+#div4-s{
     margin-top: 200px;
     display: flex;
     align-items: flex-start;
@@ -625,3 +625,33 @@ flex-shrink: 0;
         }
     }
 }
+#div5-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 64px;
+flex-shrink: 0;
+background: #121016;
+color: var(--Grey-50, #A3A4A9);
+font-family: "Plus Jakarta Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 200% */
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+  }
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+button{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
