@@ -75,10 +75,30 @@ const Home = () => {
     });
   };
 
+  
+  const [messageSent, setMessageSent] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    fetch('https://your-backend-api.com/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data);
+        setFormData({ name: '', email: '', message: '' });
+        setMessageSent(true);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   };
+  
+  {messageSent && <div className="alert">Message sent successfully!</div>}
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -102,7 +122,13 @@ const Home = () => {
     };
   }, []);
 
-  
+  const [activeSection, setActiveSection] = useState('Home');
+
+const handleMenuClick = (section) => {
+  setActiveSection(section);
+};
+const [currentReview, setCurrentReview] = useState(0);
+
 
   
   return (
@@ -111,12 +137,14 @@ const Home = () => {
         <div id='div1-header' className='container'>
           <div className="logo">Inter<span>Q</span></div>
           <ul>
-            {menuItems.map((item, index) => (
-              <li key={index}>
-                <a href="Home">{item}</a>
-              </li>
-            ))}
-          </ul>
+  {menuItems.map((item, index) => (
+    <li key={index} className={activeSection === item ? 'active' : ''}>
+      <a href="Home" onClick={() => handleMenuClick(item)}>
+        {item}
+      </a>
+    </li>
+  ))}
+</ul>
           <div className='btn1'><button>Contact Us</button></div>
         </div>
         <div id='div1-center' className='container'>

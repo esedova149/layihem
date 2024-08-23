@@ -901,6 +901,10 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
+ul li.active a {
+    color: #007BFF; 
+    font-weight: bold;
+  }
 .hidden {
     opacity: 0;
     transform: translateY(50px);
