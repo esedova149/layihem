@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 #um-b{
-    width: 1440px;  
+    width:80%;
+    margin: 0 auto;
+    border: 0;
 }
-#div1-b{
-    margin-bottom: 100px;
-    height: 487px;
+.home-page{
+    width: 100%;
+}
+#div1-a{
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-clip: inherit;
     background-position: center;
     background-image: url(./image/Image1.png) ;
+    background-size: cover;
     & #div1-header-a{
         width: 100%;
         display: flex;

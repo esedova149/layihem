@@ -1,5 +1,6 @@
 import React from 'react';
 import './blog.css';
+import Navbar from './Navbar';
 
 const Blog= () =>{
     const menuItems = ["Home", "About Us", "Portfolio", "Service", "Pages"];
@@ -22,24 +23,17 @@ const Blog= () =>{
     ];
 
   return (
+    <div className="home-page">
+    <div id='div1-a' className='hidden'>
+      <div id='div1-header-a' className='container'>
+      <Navbar/>
+      </div>
+      <div id='div1-center-a' className='container'>
+        <div>About Us</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. </p>
+      </div>
+    </div >
  <div id='um-b'>
-     <div id='div1-b' className='hidden'>
-        <div id='div1-header-a' className='container'>
-          <div className="logo">Inter<span>Q</span></div>
-          <ul>
-            {menuItems.map((item, index) => (
-              <li key={index}>
-                <a href="#">{item}</a>
-              </li>
-            ))}
-          </ul>
-          <div className='btn1'><button>Contact Us</button></div>
-        </div>
-        <div id='div1-center-a' className='container'>
-          <div>Blog</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet vitae vel id id porttitor ut in. Integer pretium egestas nisi, nunc, purus sit vitae nisi, etiam. </p>
-        </div>
-      </div >
       <div id='div2-b' className='hidden'>
           {updates.map((update, index) => (
             <div className='div3-center' key={index}>
@@ -125,6 +119,7 @@ const Blog= () =>{
         </div>
         </div>
         <div id='div4-b'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
+ </div>
  </div>
   );
 }

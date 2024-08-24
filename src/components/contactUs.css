@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 #um-c{
-    width: 1440px;
+    width:80%;
+    margin: 0 auto;
+    border: 0;
 }
-#div1-c{
-    margin-bottom: 100px;
-    height: 487px;
+.home-page{
+    width: 100%;
+}
+#div1-a{
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-clip: inherit;
     background-position: center;
     background-image: url(./image/Image1.png) ;
+    background-size: cover;
     & #div1-header-a{
         width: 100%;
         display: flex;
@@ -436,31 +443,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
-#div1-header ul li a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  #div1-header ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-  }
-  
-  #div1-header ul li a:hover::after {
-    width: 100%;
-  }
-  #div1-header ul li a:hover {
-    color: #ffffff !important;
-  }
+
 .hidden {
     opacity: 0;
     transform: translateY(50px);

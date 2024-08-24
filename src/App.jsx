@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import "./main.css";
 import Home from './components/Home'; 
 import About from './components/About';
@@ -8,20 +9,36 @@ import PricingPlan from './components/PricingPlan';
 import Blog from './components/Blog';
 import ContactUs from './components/ContactUs';
 import NotFound from './components/NotFound';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <div>
-      <Home />
-      <About/>
-      <Portfolio/>
-      <Service/>
-      <PricingPlan/>
-      <Blog/>
-      <ContactUs/>
-      <NotFound/>
-    </div>
+    // <div>
+    //   <Home />
+    //   <About/>
+    //   <Portfolio/>
+    //   <Service/>
+    //   <PricingPlan/>
+    //   <Blog/>
+    //   <ContactUs/>
+    //   <NotFound/>
+    // </div>
+    <Router>
+       {/* <Navbar/> */}
+  <Routes>
+  <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
+        <Route path="/service" element={<Service/>} />
+      <Route path="/contact" element={<ContactUs/>} />
+  </Routes>
+  {/* {header  footer routesdan kenarda olmalidir,header footer ayri komponentler olmalidir} */}
+ 
+ <Footer/>
+  </Router>
+
   );
 }
 
