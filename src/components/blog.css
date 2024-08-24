@@ -349,6 +349,31 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
+#div1-header ul li a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  #div1-header ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  #div1-header ul li a:hover::after {
+    width: 100%;
+  }
+  #div1-header ul li a:hover {
+    color: #ffffff !important;
+  }
 .hidden {
     opacity: 0;
     transform: translateY(50px);

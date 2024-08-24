@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "./home.css";
 import data from './data/home.json';
+import Navbar from './Navbar';
 
 const Home = () => {
  
@@ -128,6 +129,30 @@ const handleMenuClick = (section) => {
   setActiveSection(section);
 };
 const [currentReview, setCurrentReview] = useState(0);
+const [darkMode, setDarkMode] = useState(false);
+
+const toggleDarkMode = () => {
+  setDarkMode(!darkMode);
+};
+const [showScrollTop, setShowScrollTop] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowScrollTop(true);
+    } else {
+      setShowScrollTop(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 
 
   
@@ -326,7 +351,10 @@ const [currentReview, setCurrentReview] = useState(0);
         </div>
         </div>
       <div id='div7'className='hidden'>Copyright InterQ. 2021 All Right Reserved</div>
-    </div>
+        {showScrollTop && (
+       <button className="scroll-to-top" onClick={scrollToTop}>  ↑  </button>
+        )}
+       </div>
   );
 };
 

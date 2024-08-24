@@ -9,6 +9,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-clip: inherit;
+    background-position: center;
     background-image: url(./image/Image1.png) ;
     & #div1-header{
         width: 100%;
@@ -901,9 +902,46 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
+#div1-header ul li a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  #div1-header ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  #div1-header ul li a:hover::after {
+    width: 100%;
+  }
+  #div1-header ul li a:hover {
+    color: #ffffff !important;
+  }
 ul li.active a {
     color: #007BFF; 
     font-weight: bold;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #6C8947;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
   }
 .hidden {
     opacity: 0;
@@ -921,7 +959,56 @@ button:hover {
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
+@media (max-width: 768px) {
+    #um{
+        max-width: 768px;
+        & >div{
+            flex-direction: column;
+        }
+    }
+    #div1{
+        flex-direction: column;
+        & #div1-header{
+        
+        }
+        & #div1-center{
+            width: 400px;
+        }
+    }
+    #div2>div{
+        flex-direction: column;
+        
+    }
+    #div2{
+        & .div2-center2{
+            flex-direction: column;
+        }
+        & .div2-bottom .div2-bottom2{
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    .div3-bottom{
+        flex-direction: column;
+    }
+    /* .div4-top1{
+        width: 400px !important;
+    } */
+  .div4-top2{
+    flex-direction: column;
+    gap: 16px;
+  }
+  .div5-center{
+    & input{
+        width: 327px;
+    }
+  }
+  .div5-center1{
+    flex-direction: column;
+  }
 
+   
+  }
 
 /* @media(max-width:1440px) {
     #DESKTOP {
