@@ -22,6 +22,13 @@ const ContactUs = () => {
     e.preventDefault();
     console.log(formData);
   };
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
 
   return (
     <div className="home-page">
@@ -43,50 +50,50 @@ const ContactUs = () => {
       </div>
     </div>
       <div id="um-c">
-        <div id="div2-c">
-          <div className="div5-top">
-            Need a consultation
-            <br />
-            for your home?
+      <div id="div2-c">
+      <div className="div5-top">
+        Need a consultation
+        <br />
+        for your home?
+      </div>
+      <form className="div5-center" onSubmit={handleSubmit}>
+        <div className="div5-center1">
+          <div>
+            <label>Your Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              value={formData.name}
+              onChange={handleChange}
+            />
           </div>
-          <form className="div5-center" onSubmit={handleSubmit}>
-            <div className="div5-center1">
-              <div>
-                <label>Your Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Full Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label>Your Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email Address"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
-            <div className="div5-center2">
-              <label>Your Message</label>
-              <input
-                type="text"
-                name="message"
-                placeholder="Write Here"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="btn5">
-              <button type="submit">Send</button>
-            </div>
-          </form>
+          <div>
+            <label>Your Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email Address"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
         </div>
+        <div className="div5-center2">
+          <label>Your Message</label>
+          <input
+            type="text"
+            name="message"
+            placeholder="Write Here"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="btn5">
+          <button type="button" onClick={resetForm}>Send</button> {/* Bu button sıfırlamaq üçündür */}
+        </div>
+      </form>
+    </div>
         <div id="div3-c">
           <div></div>
           <div>

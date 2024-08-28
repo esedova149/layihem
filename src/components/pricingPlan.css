@@ -1,100 +1,23 @@
 
-#um-p{
-    width: 1440px;
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+#um-pp{
+    width:80%;
+    margin: 0 auto;
+    border: 0;
 }
-#div1-pp{
-    margin-bottom: 100px;
-    height: 487px;
+.home-page{
+    width: 100%;
+}
+#div1{
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-clip: inherit;
     background-position: center;
     background-image: url(./image/Image1.png) ;
-    & #div1-header-a{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 100px;
-        padding-top: 35px;
-        & .logo{
-            color: var(--Black, #18161D);
-            text-align: center;
-            font-family: "Yeseva One";
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            & span{
-                color: var(--Green, #6C8947);
-            }
-        }
-        & ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 64px;
-            cursor: pointer;
-            & li a{
-                color: var(--Grey-100, #51575D);
-    text-align: center;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 200% */
-            }
-        }
-        & .btn1{
-            
-    gap: 10px;
-    & button{
-        cursor: pointer;
-         background-color: transparent;
-         border: 0;   
-         color: var(--Black, #18161D);
-    text-align: center;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 200% */
-    border-radius: 4px;
-    border: 1px solid var(--Black, #18161D);
-    display: inline-flex;
-    padding: 12px 16px;
-    align-items: flex-start;
-    }
-        }
-    }
-    & #div1-center-a{
-        margin-top: 109px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        
-        & div{
-            color: var(--Black, #18161D);
-    text-align: center;
-    font-family: "Yeseva One";
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-        }
-        & p{
-            width: 623px;
-            color: var(--Grey-100, #51575D);
-    text-align: center;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 200% */
-        }
-            }
+    background-size: cover;
 }
 
 #div2-pp{
@@ -470,31 +393,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 200% */
 }
-#div1-header ul li a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  #div1-header ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-  }
-  
-  #div1-header ul li a:hover::after {
-    width: 100%;
-  }
-  #div1-header ul li a:hover {
-    color: #ffffff !important;
-  }
+
 .hidden {
     opacity: 0;
     transform: translateY(50px);

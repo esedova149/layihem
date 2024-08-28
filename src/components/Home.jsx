@@ -141,30 +141,21 @@ const Home = () => {
     setActiveSection(section);
   };
   const [currentReview, setCurrentReview] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  // };
+
+
+
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <div className="home-page">
       {" "}
@@ -362,16 +353,12 @@ const Home = () => {
               />
             </div>
             <div className="btn5">
-              <button type="submit">Send</button>
-            </div>
+          <button type="button" onClick={resetForm}>Send</button> {/* Bu button sıfırlamaq üçündür */}
+        </div>
           </form>
         </div>
 
-        {showScrollTop && (
-          <button className="scroll-to-top" onClick={scrollToTop}>
-              ↑  
-          </button>
-        )}
+        
       </div>
     </div>
   );

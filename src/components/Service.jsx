@@ -65,23 +65,23 @@ const Service = () => {
 
   return (
     <div className="home-page">
-    {" "}
-    <div id="div1">
-      <div className="container">
-        <Navbar />
-        <div id="div1-center" className="container">
-          <div>Service</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
-            vitae vel id id porttitor ut in. Integer pretium egestas nisi,
-            nunc, purus sit vitae nisi, etiam.{" "}
-          </p>
-          <div className="btn2">
-            <button>Get Started</button>
+      {" "}
+      <div id="div1">
+        <div className="container">
+          <Navbar />
+          <div id="div1-center" className="container">
+            <div>Service</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+              vitae vel id id porttitor ut in. Integer pretium egestas nisi,
+              nunc, purus sit vitae nisi, etiam.{" "}
+            </p>
+            <div className="btn2">
+              <button>Get Started</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
       <div id="um-s">
         <div id="div2-s">
           <div id="div2-center" className="container">
@@ -121,21 +121,20 @@ const Service = () => {
                 <div key={step.step}>{step.step}</div>
               ))}
             </div>
-            {steps.map(
-              (step) => (
-                (
-                  <div key={step.step} className="step-content div-text">
-                    <p>{step.title}</p>
-                    <p>{step.subtitle}</p>
-                    <p>{step.description}</p>
-                  </div>
-                ),
-                (<div>{step.image}</div>)
-              )
-            )}
+            {steps.map((step) => (
+              <>
+                <div key={step.step} className="step-content div-text">
+                  <p>{step.title}</p>
+                  <p>{step.subtitle}</p>
+                  <p>{step.description}</p>
+                </div>
+                <div>{step.image}</div>
+              </>
+            ))}
             <div></div>
             <div></div>
             <div></div>
+
           </div>
         </div>
       </div>
