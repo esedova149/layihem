@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
   list-style: none;
+  & p{
+    font-family: Playfair Display !important;
+  }
+ 
+  & div{
+    font-family: Baskervville SC !important;
+    font-weight: 500 !important;
+  }
 }
-#um{
+/* #um{
   width: 1440px;
   border: 1px solid;
-}
+} */
 .container {
     width: 1440px;
     max-width: 90%;
