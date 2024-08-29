@@ -89,75 +89,74 @@ const PricingPlan = () => {
 
   return (
     <div className="home-page">
-    {" "}
-    <div id="div1" >
-      <div className="container">
-        <Navbar />
-        <div id="div1-center" className="container">
-          <div>About</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
-            vitae vel id id porttitor ut in. Integer pretium egestas nisi,
-            nunc, purus sit vitae nisi, etiam.{" "}
-          </p>
-          <div className="btn2">
-            <button>Get Started</button>
+      {" "}
+      <div id="div1">
+        <div className="container">
+          <Navbar />
+          <div id="div1-center" className="container">
+            <div>About</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
+              vitae vel id id porttitor ut in. Integer pretium egestas nisi,
+              nunc, purus sit vitae nisi, etiam.{" "}
+            </p>
+            <div className="btn2">
+              <button>Get Started</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="um-pp">
-     
-      <div id="div2-pp" className="pricing-cards-container">
-        {plans.map((plan, index) => (
-          <PricingCard key={index} {...plan} />
-        ))}
-      </div>
-      <div id="div3-pp" className="hidden">
-        <div className="div5-top">
-          Need a consultation
-          <br />
-          for your home?
+      <div id="um-pp">
+        <div id="div2-pp" className="pricing-cards-container">
+          {plans.map((plan, index) => (
+            <PricingCard key={index} {...plan} />
+          ))}
         </div>
-        <form className="div5-center" onSubmit={handleSubmit}>
-          <div className="div5-center1">
-            <div>
-              <label>Your Name</label>
+        <div id="div3-pp">
+          <div className="div5-top">
+            Need a consultation
+            <br />
+            for your home?
+          </div>
+          <form className="div5-center" onSubmit={handleSubmit}>
+            <div className="div5-center1">
+              <div>
+                <label>Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <label>Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="div5-center2">
+              <label>Your Message</label>
               <input
                 type="text"
-                name="name"
-                placeholder="Your Full Name"
-                value={formData.name}
+                name="message"
+                placeholder="Write Here"
+                value={formData.message}
                 onChange={handleChange}
               />
             </div>
-            <div>
-              <label>Your Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email Address"
-                value={formData.email}
-                onChange={handleChange}
-              />
+            <div className="btn5">
+              <button type="submit">Send</button>
             </div>
-          </div>
-          <div className="div5-center2">
-            <label>Your Message</label>
-            <input
-              type="text"
-              name="message"
-              placeholder="Write Here"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="btn5">
-            <button type="submit">Send</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

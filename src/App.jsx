@@ -48,7 +48,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/pages" element={<PricingPlan />} />
+        <Route path="/PricingPlan" element={<PricingPlan />} />
+        <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       {/* {header  footer routesdan kenarda olmalidir,header footer ayri komponentler olmalidir} */}
