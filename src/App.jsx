@@ -51,8 +51,9 @@ function App() {
         <Route path="/PricingPlan" element={<PricingPlan />} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route component={NotFound} /> {}
       </Routes>
-      {/* {header  footer routesdan kenarda olmalidir,header footer ayri komponentler olmalidir} */}
+      {}
 
       <Footer />
       {showScrollTop && (

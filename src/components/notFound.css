@@ -9,7 +9,7 @@
     background-clip: inherit;
     background-position: center;
     background-image: url(./image/Image1.png) ;
-    & #div1-header-a{
+    & #div1-header{
         width: 100%;
         display: flex;
         align-items: center;
