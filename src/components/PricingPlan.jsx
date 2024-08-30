@@ -94,7 +94,7 @@ const PricingPlan = () => {
         <div className="container">
           <Navbar />
           <div id="div1-center" className="container">
-            <div>About</div>
+            <div>Pricing Plan</div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. A amet
               vitae vel id id porttitor ut in. Integer pretium egestas nisi,

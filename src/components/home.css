@@ -11,6 +11,7 @@
 }
 .home-page {
   width: 100%;
+ overflow: hidden;
 }
 #div1 {
   height: 970px;
