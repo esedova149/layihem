@@ -238,15 +238,16 @@
       width: 100%;
       height: 583px;
       display: grid;
-      gap: 28px;
-      grid-template-columns: 36% 36% auto;
-      grid-template-rows: 3fr 3fr;
+      gap: 5%;
+      grid-template-columns: 33% 33% auto;
+      grid-template-rows: 4fr 4fr;
   
       & div {
         background-repeat: no-repeat !important;
         border-radius: 24px;
-        background-size: cover;
+        background-size: cover ;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: auto;
       }
       & div:hover {
         transform: scale(1.05);
@@ -463,6 +464,7 @@
     }
     & .div4-top2 {
       width: 100%;
+      gap: 5%;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -922,12 +924,13 @@ button:hover {
  .div2-bottom2 {
     display: flex !important;
     flex-direction: column !important;
+    gap: 30px !important;
     height: auto !important;
     align-items: center;
     justify-content: center;
     & div{
-      height: 283px;
-      width: 326px;
+      height: 300px !important;
+      width: 400px !important;
     }
     & div:nth-of-type(2){
       height: 583px;
@@ -943,14 +946,16 @@ button:hover {
     flex-direction: column;
     gap: 16px;
   }
+  .div5-center div{
+& div{
+  width: 100%;
+}
+  }
   .div5-center {
-    & input {
-      width: 327px;
-    }
-  }
-  .div5-center1 {
     flex-direction: column;
+    width: 100%;
   }
+
   #div6{
     flex-direction: column;
   }

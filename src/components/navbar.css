@@ -31,7 +31,7 @@ cursor: pointer;
   }
 }
 .nav, .nav2 > li:nth-last-of-type(1){
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 button {
     cursor: pointer;

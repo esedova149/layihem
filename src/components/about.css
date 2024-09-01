@@ -405,6 +405,10 @@ button:hover {
   .div2-bottom-aa {
     display: flex !important;
     flex-direction: column !important;
+    & div{
+      width: 400px !important;
+      background-size: cover;
+    }
   }
   .div5-center {
     & input {

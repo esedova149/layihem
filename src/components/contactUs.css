@@ -123,88 +123,91 @@ font-weight: 400;
 line-height: normal;
 margin-bottom: 40px;
 }
-& .div5-center{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;  
-  justify-content: center;
-  gap: 32px;
-}
-& .div5-center1{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 32px;
-& div{
+& .div5-center {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 12px;
-}
-& label{
-    color: var(--Black, #18161D);
+    gap: 32px;
+  }
+  & .div5-center1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 12px;
+    }
+    & label {
+      color: var(--Black, #18161d);
 
-/* Heading 16 */
-font-family: "Yeseva One";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-& input{
-    width: 372px;
-height: 49px;
-flex-shrink: 0;
-padding: 20px;
-border-radius: 4px;
-border: 1px solid rgba(0, 0, 0, 0.07);
-background: #FFF;
-}
-& input::placeholder{
-    color: var(--Grey-50, #A3A4A9);
-font-family: "Plus Jakarta Sans";
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 200% */
-}
-}
-& .div5-center2{
+      /* Heading 16 */
+      font-family: "Yeseva One";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & input {
+      width: 372px;
+      height: 49px;
+      flex-shrink: 0;
+      padding: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      background: #fff;
+    }
+    & input::placeholder {
+      color: var(--Grey-50, #a3a4a9);
+      font-family: "Plus Jakarta Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 200% */
+    }
+  }
+  & .div5-center2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 12px;
     margin-bottom: 32px;
-    & label{
-        color: var(--Black, #18161D);
+    & label {
+      color: var(--Black, #18161d);
 
-/* Heading 16 */
-font-family: "Yeseva One";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+      /* Heading 16 */
+      font-family: "Yeseva One";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
-    & input{
-        width: 776px;
-height: 135px;
-flex-shrink: 0;
-    padding: 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    background: #FFF;
+    & input {
+      width: 100%;
+      height: 135px;
+      flex-shrink: 0;
+      padding: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      background: #fff;
     }
-    & input::placeholder{
-        color: var(--Grey-50, #A3A4A9);
-    font-family: "Plus Jakarta Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 200% */
+    & input::placeholder {
+      color: var(--Grey-50, #a3a4a9);
+      font-family: "Plus Jakarta Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 200% */
     }
-}
+  }
 & .btn5 button{
     color: #FFF;
 text-align: center;
@@ -232,12 +235,15 @@ cursor: pointer;
     justify-content: center;
     padding: 80px;
     gap: 61px;
+    width: 100%;
 
     & >div:nth-of-type(1){
-        width: 607px;
+        width:500px;
         height: 336px;
         flex-shrink: 0;
         background-image: url(./image/Image33.png);
+        background-size: cover;
+        border-radius: 50px;
     }
     & >div:nth-of-type(2){
         display: flex;
@@ -461,3 +467,24 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
 
+
+  @media (max-width: 768px) {
+    #um {
+      max-width: 768px;
+      & > div {
+        flex-direction: column;
+      }
+    }
+ #div3-c{
+flex-direction: column !important;
+align-items: flex-start;
+    }
+  .div5-center {
+    & input {
+      width: 327px;
+    }
+  }
+  .div5-center1 {
+    flex-direction: column;
+  }
+}

@@ -14,7 +14,9 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="resp">
         <div className="logo">
-          Inter<span>Q</span>
+          <NavLink path to="/" onClick={() => setIsMenuOpen(false)}>
+            Inter<span>Q</span>
+          </NavLink>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <svg
@@ -37,7 +39,7 @@ const Navbar = () => {
 
       <ul className={`nav ${isMenuOpen ? "hide-nav" : ""}`}>
         <li className="logo">
-          <NavLink path to="/home" onClick={() => setIsMenuOpen(false)}>
+          <NavLink path to="/" onClick={() => setIsMenuOpen(false)}>
             Inter<span>Q</span>
           </NavLink>
         </li>

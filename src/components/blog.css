@@ -339,3 +339,14 @@ button:hover {
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
+  @media (max-width: 768px) {
+    #um-s {
+      max-width: 768px;
+      & > div {
+        flex-direction: column;
+      }
+    }
+    #div2-b{
+        flex-direction: column;
+    }
+}

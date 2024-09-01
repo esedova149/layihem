@@ -454,4 +454,14 @@ button:hover {
   .div2-center2 {
     flex-direction: column;
   }
+  #div3-s >div{
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    & .steps-numbers{
+      display: none !important;
+    }
+  }
 }
