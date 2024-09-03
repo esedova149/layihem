@@ -9,6 +9,7 @@ import PricingPlan from "./components/PricingPlan";
 import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import NotFound from "./components/NotFound";
+import DetailBlog from "./components/DetailBlog";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -50,9 +51,11 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/PricingPlan" element={<PricingPlan />} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/detail/:id" element={<DetailBlog/>} />
         <Route path="/contact" element={<ContactUs />} />
         <Route component={NotFound} /> {}
       </Routes>
+      
       {}
 
       <Footer />

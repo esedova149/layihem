@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./blog.css";
 import Navbar from "./Navbar";
 
@@ -6,18 +7,21 @@ const Blog = () => {
   const menuItems = ["Home", "About Us", "Portfolio", "Service", "Pages"];
   const updates = [
     {
+      id: 1,
       date: "12 May 2022",
       title: "Lorem ipsum dolor sit amet",
       description:
         "Pellentesque suspendisse aenean aliquet arcu facilisi molestie. Magna velit, malesuada ullamcorper amet",
     },
     {
+      id: 2,
       date: "12 May 2022",
       title: "Lorem ipsum dolor sit amet",
       description:
         "Pellentesque suspendisse aenean aliquet arcu facilisi molestie. Magna velit, malesuada ullamcorper amet",
     },
     {
+      id: 3,
       date: "12 May 2022",
       title: "Lorem ipsum dolor sit amet",
       description:
@@ -55,7 +59,9 @@ const Blog = () => {
                 <p>{update.description}</p>
               </div>
               <div className="btn3">
-                <button>Read More</button>
+                <Link to={`/detail/${update.id}`}>
+                  <button>Read More</button>
+                </Link>
               </div>
             </div>
           ))}
@@ -70,7 +76,9 @@ const Blog = () => {
                 <p>{update.description}</p>
               </div>
               <div className="btn3">
-                <button>Read More</button>
+                <Link to={`/detail/${update.id}`}>
+                  <button>Read More</button>
+                </Link>
               </div>
             </div>
           ))}
@@ -85,7 +93,9 @@ const Blog = () => {
                 <p>{update.description}</p>
               </div>
               <div className="btn3">
-                <button>Read More</button>
+                <Link to={`/detail/${update.id}`}>
+                  <button>Read More</button>
+                </Link>
               </div>
             </div>
           ))}
