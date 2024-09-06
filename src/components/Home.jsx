@@ -353,7 +353,7 @@ const Home = () => {
               />
             </div>
             <div className="btn5">
-          <button type="button" onClick={resetForm}>Send</button> {/* Bu button sıfırlamaq üçündür */}
+          <button type="submit" onClick={resetForm}>Send</button> {/* Bu button sıfırlamaq üçündür */}
         </div>
           </form>
         </div>

@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+    width: 100%;
 
     & div:nth-of-type(1) {
       color: var(--Black, #18161d);
@@ -40,7 +41,7 @@
       line-height: normal;
     }
     & p {
-      width: 623px;
+      width: 95% !important;
       color: var(--Grey-100, #51575d);
       text-align: center;
       font-family: "Plus Jakarta Sans";
@@ -85,11 +86,13 @@
     justify-content: space-between; /************/
     gap: 76px;
     & > div:nth-of-type(1) {
-      width: 544px;
+      width: 42%;
+      border-radius: 30px;
       height: 384px;
       flex-shrink: 0;
       background-image: url(./image/Image2.png);
       background-size: cover;
+      background-repeat: no-repeat;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     & > div:nth-of-type(1):hover {
@@ -112,7 +115,7 @@
         line-height: normal;
       }
       & p {
-        width: 502px;
+        width: 100%;
         color: var(--Grey-100, #51575d);
         font-family: "Plus Jakarta Sans";
         font-size: 14px;
@@ -143,7 +146,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between; /****************/
-      /* gap: 50px; */
+      gap: 50px;
       & .design {
         display: flex;
         flex-direction: column;
@@ -189,7 +192,7 @@
           line-height: normal;
         }
         & p {
-          width: 296px;
+          width: 90%;
           color: var(--Grey-100, #51575d);
           text-align: center;
           font-family: "Plus Jakarta Sans";
@@ -224,7 +227,7 @@
         line-height: normal;
       }
       & p {
-        width: 623px;
+        width: 95%;
         color: var(--Grey-100, #51575d);
         text-align: center;
         font-family: "Plus Jakarta Sans";
@@ -291,6 +294,10 @@
   background: var(--Grey-10, #fafafa);
   transform: translateY(100px);
   & .div3-top {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
     & div {
       color: var(--Black, #18161d);
       text-align: center;
@@ -302,7 +309,7 @@
       padding-bottom: 16px;
     }
     & p {
-      width: 623px;
+      width: 95%;
       color: var(--Grey-100, #51575d);
       text-align: center;
       font-family: "Plus Jakarta Sans";
@@ -425,7 +432,11 @@
 }
 #div4 {
   width: 100%;
-  padding: 100px;
+  /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   & .div4-top {
     display: flex;
     flex-direction: column;
@@ -441,8 +452,6 @@
       & div {
         color: var(--Black, #18161d);
         text-align: center;
-
-        /* Heading 40 */
         font-family: "Yeseva One";
         font-size: 40px;
         font-style: normal;
@@ -450,11 +459,9 @@
         line-height: normal;
       }
       & p {
-        width: 623px;
+        width: 430px;
         color: var(--Grey-100, #51575d);
         text-align: center;
-
-        /* Body 14 */
         font-family: "Plus Jakarta Sans";
         font-size: 14px;
         font-style: normal;
@@ -500,8 +507,6 @@
           & div:nth-of-type(2) {
             & p:nth-of-type(1) {
               color: var(--Black, #18161d);
-
-              /* Heading 16 */
               font-family: "Yeseva One";
               font-size: 16px;
               font-style: normal;
@@ -510,8 +515,6 @@
             }
             & p:nth-of-type(2) {
               color: var(--Grey-100, #51575d);
-
-              /* Body 14 */
               font-family: "Plus Jakarta Sans";
               font-size: 14px;
               font-style: normal;
@@ -578,7 +581,8 @@
   width: 100%;
   margin-top: 10px;
   display: flex;
-  padding: 54px 108px;
+  /* padding: 54px 108px; */
+  padding: 5% ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -915,6 +919,9 @@ button:hover {
   #div2 > div {
     flex-direction: column;
   }
+  #div2-top div{
+    width: 95% !important;
+  }
   #div2 {
     & .div2-center2 {
       flex-direction: column;
@@ -959,4 +966,14 @@ button:hover {
   #div6{
     flex-direction: column;
   }
+}
+
+@media (max-width: 480px) {
+  #um {
+    max-width: 480px;
+    & > div {
+      flex-direction: column;
+    }
+  }
+
 }

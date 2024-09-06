@@ -32,18 +32,8 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    // <div>
-    //   <Home />
-    //   <About/>
-    //   <Portfolio/>
-    //   <Service/>
-    //   <PricingPlan/>
-    //   <Blog/>
-    //   <ContactUs/>
-    //   <NotFound/>
-    // </div>
     <Router>
-      {/* <Navbar/> */}
+      {}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
