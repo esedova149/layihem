@@ -1,9 +1,9 @@
-import React from 'react'
-import './home.css';
+import React from "react";
+import "./home.css";
 const Footer = () => {
   return (
     <div>
-           <div id="div6">
+      <div id="div6">
         <div className="div6-1">
           <div className="logo1">
             Inter<span>Q</span>
@@ -13,19 +13,21 @@ const Footer = () => {
             vitae vel id id porttitor ut in. Integer pretium
           </p>
         </div>
-        <div className="div6-2">
-          <p>Quicklink 1</p>
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Portofolio</p>
-          <p>Service</p>
-        </div>
-        <div className="div6-3">
-          <p>Quicklink 2</p>
-          <p>Pricing</p>
-          <p>Blog</p>
-          <p>Single Blog</p>
-          <p>404 Error</p>
+        <div className="div6-flex">
+          <div className="div6-2">
+            <p>Quicklink 1</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Portofolio</p>
+            <p>Service</p>
+          </div>
+          <div className="div6-3">
+            <p>Quicklink 2</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <p>Single Blog</p>
+            <p>404 Error</p>
+          </div>
         </div>
         <div className="div6-4">
           <p>Join Our Newsletter</p>
@@ -82,11 +84,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div id="div7" >
-        Copyright InterQ. 2021 All Right Reserved
-      </div>
+      <div id="div7">Copyright InterQ. 2021 All Right Reserved</div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

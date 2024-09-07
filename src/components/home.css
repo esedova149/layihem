@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 #um {
   width: 80%;
@@ -432,7 +433,7 @@
 }
 #div4 {
   width: 100%;
-  /* padding: 100px; */
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -551,7 +552,7 @@
           justify-content: flex-start;
         }
         & p:nth-of-type(2) {
-          width: 432px;
+          width: auto;
           color: var(--Grey-100, #51575d);
           font-family: "Plus Jakarta Sans";
           font-size: 14px;
@@ -708,7 +709,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 52px 100px 42px;
+  padding: 52px 80px 42px;
   background: var(--Black, #18161d);
   & .div6-1 {
     display: flex;
@@ -738,6 +739,11 @@
       line-height: 24px; /* 200% */
       margin-right: 106px;
     }
+  }
+  & .div6-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   & .div6-2 {
     margin-right: 80px;
@@ -933,8 +939,8 @@ button:hover {
     flex-direction: column !important;
     gap: 30px !important;
     height: auto !important;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     & div{
       height: 300px !important;
       width: 400px !important;
@@ -952,6 +958,13 @@ button:hover {
   .div4-top2 {
     flex-direction: column;
     gap: 16px;
+    .div4-top22{
+      width: 95% !important;
+      & p{
+        width: 100% !important;
+        padding: 15px 0;
+      }
+    }
   }
   .div5-center div{
 & div{
@@ -966,6 +979,18 @@ button:hover {
   #div6{
     flex-direction: column;
   }
+  .div6-1 p{
+width: 70% !important;
+  }
+  & .div6-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  .div2-bottom2 div{
+    width: 98% !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -977,3 +1002,7 @@ button:hover {
   }
 
 }
+
+
+/* footerdaki padding
+bloglar 2-2 dussun */
